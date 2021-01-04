@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>What is the REACT ?</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h3>REACT</h3>
+				<img src="./assets/reacta.png" alt="">
+			</section>
+
+			<section>
+				<h2>Table of contents</h2>
+				<ul>
+					<li>Introduction</li>
+					<li>Basic knowledge</li>
+					<li>REACT
+						<ul>
+							<li>History</li>
+							<li>Statistics</li>
+							<li>Virtual DOM</li>
+							<li>JSX</li>
+							<li>Components</li>
+						</ul>
+					</li>
+					<li>Redux</li>
+					<li>Summary</li>
+				</ul>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<h2>Introduction</h2>
+				<h4>WHO I AM: Muhammed Abdrahman;
+					<br>
+					AGE: 18;
+					<br>
+					<hr>
+					<a href="https://github.com/muhammed03">github.com/muhammed03</a>
+				</h4>
+				<h6>Frontend developer</h6>
+
+			</section>
+
+			<section>
+				<h2>Basic knowledge</h2>
+				<ul>
+					<li>HTML & CSS</li>
+					<li>JSX (JavaScriptXML) & Babel</li>
+					<li>Fundamental JavaScript and ES6</li>
+					<li>Package manager (Node and NPM)</li>
+					<li>GIT and CLI</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>History</h2>
+				<p>React was created by Jordan Walke, a software engineer at Facebook, who released an early prototype
+					of React called "FaxJS". He was influenced by XHP, an HTML component library for PHP.
+				</p>
+				<img src="./assets/jordan.png" alt="">
+			</section>
+
+			<section>
+				<h2>What is the REACT?</h2>
+				<div>
+					<div>
+						<h4>DEFINITION</h4>
+						<p>A JavaScript library for building user interfaces</p>
+					</div>
+					<div>
+						<h4>Advantages</h4>
+						<p>React makes it painless to create interactive UIs
+							Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+							</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Statistics</h2>
+				<img src="./assets/react.PNG" alt="" style="height: 50vh;">
+			</section>
+
+			<section>
+				<h2>Sites build with REACTJS</h2>
+				<img src="./assets/React-websites.png" alt="">
+			</section>
+
+			<section>
+				<section>
+				<h2>Virtual dom</h2>
+					<h3>WHAT?</h3>
+					<p>A virtual DOM object is a representation of a DOM object, like a lightweight copy.</p>
+			    </section>
+				<section>
+					<h3>How it helps?</h3>
+					<p>By comparing the new virtual DOM with a pre-update version, React figures out exactly which virtual DOM objects have changed. This process is called “diffing.”</p>
+				</section>
+				<section>
+					<h3>Summary</h3>
+					<p>Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM. In our example from earlier, React would be smart enough to rebuild your one checked-off list-item, and leave the rest of your list alone.</p>
+				</section>	
+
+				<section >
+					<img src="./assets/baeugmdg3iz73qvak9t2cjkpszc.png" alt="">
+				</section>
+
+				<section>
+					<img src="./assets/virtual dom.png" alt="">
+				</section>
+			</section>
+			
+
+			<section>
+				<h2>REACT JSX</h2>
+				<p>JSX is an XML/HTML-like syntax used by React that extends ECMAScript so that XML/HTML-like text can co-exist with JavaScript/React code. The syntax is intended to be used by preprocessors (i.e., transpilers like Babel) to transform HTML-like text found in JavaScript files into standard JavaScript objects that a JavaScript engine will parse.
+				</p>
+			</section>
+			<section data-visibility="hidden">
+				<h2>Hidden Slides</h2>
+				<p>
+					This slide is visible in the source, but hidden when the presentation is viewed. You can show all
+					hidden slides by setting the `showHiddenSlides` config option to `true`.
+				</p>
+			</section>
+
+			<section data-auto-animate>
+				<section>
+					<h2 data-id="code-title">Code</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						const name = 'Иван-Царевич';
+						const element = <h1>Здравствуй, {name}!</h1>;
+						
+						ReactDOM.render(
+						element,
+						document.getElementById('root')
+						);
+						</code></pre>
+					<p> We declare a variable called name and then use it inside JSX by wrapping it in curly braces:</p>
+				</section>
+				<section>
+					<img src="./assets/1.JPG" alt="">
+					<h2>=></h2>
+				</section>
+				<section>
+					<img src="./assets/2.JPG" alt="">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Components</h2>
+					<p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.</p>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						function Welcome(props) {
+							return <h1>Hellom {props.name}</h1>;
+						}
+					</code></pre>
+				</section>
+				<section>
+					<img src="./assets/React-components.jpg" alt="">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>REDUX</h2>
+					<img src="./assets/1_VeM-5lsAtrrJ4jXH96h5kg.png" alt="">
+				</section>
+				<section>
+					<h2>Explanation</h2>
+					<p>
+						Redux itself is a standalone library that can be used with any UI layer or framework, including React, Angular, Vue, Ember, and vanilla JS. Although Redux and React are commonly used together, they are independent of each other.
+					</p>
+				</section>
+				<section>
+					<h2>STEPS</h2>
+					<img src="./assets/data_flow.jpg" alt="">
+				</section>
+			</section>
+
+			<section>
+				<h2>Summary</h2>
+				<p style="font-size: 0.8em;">At the initial stage, React slows down the work. Understanding how props and state work and how components interact is not easy, and documentation is a "maze of information". In theory, this can be solved quickly if a whole team works on it;
+					React does not support browsers from IE8 and below, and never will;
+					If your application/website is not saturated with a large number of dynamic pages, you will have to write a lot of code, solving small tasks;
+					You will be reinventing bicycles. React is young, so there are no established practices. Does your app need a dropdown, window resize, or lightbox? You'll have to write it all from scratch</p>
+			</section>
+			
+
+		</div>
+
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
+</html>
